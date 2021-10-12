@@ -1,0 +1,69 @@
+#resolution {
+  height: 40px;
+  position: fixed;
+  background-color: burlywood;
+  width: 100%;
+  text-align: center;
+}
+
+#resolution:after {
+  content: "xs < ";
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #resolution {
+    background-color: burlywood;
+  }
+
+  #resolution:after {
+    content: "XS < 600px";
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #resolution {
+    background-color: fuchsia;
+  }
+
+  #resolution:after {
+    content: "S < 600px";
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #resolution {
+    background-color: salmon;
+  }
+
+  #resolution:after {
+    content: "MD < 768px";
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #resolution {
+    background-color: indigo;
+  }
+
+  #resolution:after {
+    content: "L < 992px";
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #resolution {
+    background-color: yellowgreen;
+  }
+
+  #resolution:after {
+    content: "XL < 1200px";
+  }
+}
+body {
+  background-color: red;
+}
+
+.lol {
+  background-color: blue;
+}
